@@ -1,0 +1,28 @@
+{"rule":"MORFOLOGIK_RULE_ES","sentence":"^\\Qintroduccion/ gitygithub\\E$"}
+{"rule":"MORFOLOGIK_RULE_ES","sentence":"^\\QCAPITULO I. introduccion/ intro_capitulo1\\E$"}
+{"rule":"MORFOLOGIK_RULE_ES","sentence":"^\\QFRAMEWORK.\\E$"}
+{"rule":"MORFOLOGIK_RULE_ES","sentence":"^\\Qintroduccion/ framework\\E$"}
+{"rule":"MORFOLOGIK_RULE_ES","sentence":"^\\QEL FRAMEWORK ELECTRON.\\E$"}
+{"rule":"MORFOLOGIK_RULE_ES","sentence":"^\\Qintroduccion/ el_framewor_electron\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qdesarrollo/ desarrollo\\E$"}
+{"rule":"MORFOLOGIK_RULE_ES","sentence":"^\\Qbibliografiasenlaces/ enlaces_web\\E$"}
+{"rule":"DIACRITICS_01","sentence":"^\\QCAPITULO I. introduccion/ intro_capitulo1\\E$"}
+{"rule":"MORFOLOGIK_RULE_ES","sentence":"^\\QCAPITULO I. introduccion/ intro_capitulo1\\E$"}
+{"rule":"MORFOLOGIK_RULE_ES","sentence":"^\\Qsame\\E$"}
+{"rule":"MORFOLOGIK_RULE_ES","sentence":"^\\Qmystyle backgroundcolor=, commentstyle=, keywordstyle=, numberstyle=, stringstyle=, basicstyle=, breakatwhitespace=false, breaklines=true, captionpos=b, keepspaces=true, numbers=left, numbersep=5pt, showspaces=false, showstringspaces=false, showtabs=false, tabsize=2\\E$"}
+{"rule":"MORFOLOGIK_RULE_ES","sentence":"^\\Qstyle=mystyle\\E$"}
+{"rule":"MORFOLOGIK_RULE_ES","sentence":"^\\Qsame\\E$"}
+{"rule":"MORFOLOGIK_RULE_ES","sentence":"^\\QInstalación y uso del Framework Electron Andrés Dávila Arroyo\\E$"}
+{"rule":"COMMA_PARENTHESIS_WHITESPACE","sentence":"^\\Q./ portada\\E$"}
+{"rule":"DIACRITICS_01","sentence":"^\\QCAPITULO I. introduccion/ intro_capitulo1\\E$"}
+{"rule":"MORFOLOGIK_RULE_ES","sentence":"^\\QCAPITULO I. introduccion/ intro_capitulo1\\E$"}
+{"rule":"MORFOLOGIK_RULE_ES","sentence":"^\\QFRAMEWORK.\\E$"}
+{"rule":"MORFOLOGIK_RULE_ES","sentence":"^\\Qintroduccion/ framework\\E$"}
+{"rule":"MORFOLOGIK_RULE_ES","sentence":"^\\QEL FRAMEWORK ELECTRON.\\E$"}
+{"rule":"MORFOLOGIK_RULE_ES","sentence":"^\\Qintroduccion/ el_framewor_electron\\E$"}
+{"rule":"MORFOLOGIK_RULE_ES","sentence":"^\\QMANEJO DE VERSIONES CON GIT Y GITHUB.\\E$"}
+{"rule":"MORFOLOGIK_RULE_ES","sentence":"^\\Qintroduccion/ gitygithub\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qdesarrollo/ desarrollo\\E$"}
+{"rule":"MORFOLOGIK_RULE_ES","sentence":"^\\Qbibliografiasenlaces/ enlaces_web\\E$"}
+{"rule":"SPANISH_WORD_REPEAT_BEGINNING_RULE","sentence":"^\\QDentro de nuestra carpeta estaremos creando los siguientes archivos: package package.json: este es generado automáticamente cuando se instalan paquetes o dependencias npm en el proyecto.\\E$"}
+{"rule":"SPANISH_WORD_REPEAT_RULE","sentence":"^\\Qtutorial Tutorial Educativo Electron.\\E$"}

@@ -1,0 +1,202 @@
+\documentclass[12pt,titlepage,letterpaper]{article} % ajustamos el tamaño de la letra los que tenemos disponible son 10pt ,11pt ,12pt,tamaña carta
+% tambien nos ofrecen unos tamaños de letras local 
+% \Huge (este es el tamaño mas grande)
+% \huge
+% \LARGE
+% \Large
+% \large
+% \normalsize (Por defecto)
+% \small
+% \footnotesize
+%\scriptsize
+%\tiny (este es el mas pequeño)
+%--------------------------------------------------
+\usepackage[utf8]{inputenc}% codificación
+%--------------------------------------------------
+\usepackage[spanish]{babel}% idioma español
+%--------------------------------------------------
+\usepackage{csquotes}% Cuando se usa babel con biblatex,recomienda cargar para asegurarse de que los textos citados se componen de acuerdo con las reglas de su idioma principal.
+
+%--------------------------------------------------
+
+\usepackage{parskip} % Elimina la sangria y hay separacion entre parrafos
+
+%--------------------------------------------------
+
+\usepackage{graphicx} % nos permite tener imagenes 
+
+%--------------------------------------------------
+
+\graphicspath{{capitulo_1/img/}{capitulo_1/IMGSVG/}}% incluir la ruta donde tenemos las imagenes
+
+%--------------------------------------------------
+
+\usepackage{float}% nos permite ajustar y posicionar iamgenes y tablas
+%--------------------------------------------------
+\usepackage{wrapfig} %  nos permite tener imagenes al lado del texto
+%--------------------------------------------------
+%pagina de simbolos:https://manualdelatex.com/simbolos
+\usepackage{amssymb} %nospermite utilizar algunos simbolos de matematicas
+
+%--------------------------------------------------
+
+\usepackage{subcaption} % Es posible insertar varias imágenes en una figura, cada una con su propia referencia y etiqueta.
+
+%--------------------------------------------------
+
+\usepackage{array} %tablas de longitud fijas
+%--------------------------------------------------
+\usepackage{multirow}
+
+ % https://en.m.wikibooks.org/wiki/LaTeX/Colors#The_68_standard_colors_known_to_dvips
+ 
+ %https://www.overleaf.com/learn/latex/Code_listing
+ %--------------------------------------------------
+ 
+ 
+ %--------------------------------------------------
+ 
+ \usepackage[table,xcdraw,dvipsnames]{xcolor} % le damos color a tablas,textos,entre otros
+\definecolor{codegreen}{rgb}{0,0.6,0} %defenismos un color y despues lo podemos llamar
+%por ejemplo \textcolor{codepurple}{aqui va el texto}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+\definecolor{aqua}{rgb}{0.0, 1.0, 1.0}
+\definecolor{black}{rgb}{0.0, 0.0, 0.0}
+\definecolor{floralwhite}{rgb}{1.0, 0.98, 0.94}
+%https://www.overleaf.com/learn/latex/Using_colours_in_LaTeX
+%paginapara definir color:http://latexcolor.com/
+
+ %--------------------------------------------------
+ \usepackage{listings}% NOSsirve para colocar codigo de programacion en nuesatro a
+ %https://www.overleaf.com/learn/latex/Code_listing
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{floralwhite},   
+    commentstyle=\color{black},
+    keywordstyle=\color{aqua},
+    numberstyle=\tiny\color{black},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+
+\lstset{style=mystyle}
+%https://en.wikibooks.org/wiki/LaTeX/Source_Code_Listings
+
+ %--------------------------------------------------
+ \usepackage{tabularx}%controla el ancho de toda la tabla
+ %https://ctan.org/pkg/tabularx?lang=en
+ %https://www.overleaf.com/learn/latex/Tables
+ 
+ %--------------------------------------------------
+%\usepackage[
+%backend=biber,
+%style=alphabetic,
+%sorting=ynt
+%]{biblatex}
+%\addbibresource{Bibliografiasweb.bib} %Importamos el archivo de bibliografias
+%\addbibresource{bibliografia.bib} %Importamos el archivo de bibliografias
+ %--------------------------------------------------
+\usepackage[breaklinks]{hyperref}
+%https://www.overleaf.com/learn/latex/Hyperlinks
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    filecolor=magenta, 
+    urlcolor=red,
+    pdftitle={CAPITULO 1},
+    pdfpagemode=FullScreen,
+    }
+
+\urlstyle{same} %La configuración predeterminada imprime enlaces en fuentes espaciadas de estilo mono, este comando cambia eso y muestra los enlaces en el mismo estilo que el resto del texto.
+
+ %--------------------------------------------------
+ 
+\usepackage{geometry}% ajusta el tamaño del documento
+%tamaño carta y configuramos los margenes del documento
+\geometry{letterpaper,
+          margin = 2.4cm
+         }
+%--------------------------------------------------  
+%https://www.overleaf.com/learn/latex/Management_in_a_large_project
+\usepackage{import}%  para importación de archivos anidados
+%\import{desarrollo/}{desarrollo}
+%--------------------------------------------------
+
+%\usepackage{microtype}
+
+%--------------------------------------------------
+%Para agregar citas en apa
+%Para citar se usa el comando \cite{}
+%Las referencias se modifican en el archivo sample.bib
+\usepackage{apacite}
+%\usepackage[backend = biber, natbib, style = apa ]{biblatex }
+%\addbibresource{bibliografiasenlaces/bibliografia.bib}
+%----------------------------------------------
+\title{\textbf{Instalación y uso del Framework Electron} }
+\author{Andrés Dávila Arroyo }
+\date{\today}%fecha creacion del documento
+%----------------------------------------------
+
+\begin{document}%inicio del documento
+%\newpage nueva pagina
+
+%\maketitle
+\import{./}{portada}
+\tableofcontents % tabla de contenido
+\newpage
+\listoffigures
+\newpage
+
+\begin{center}
+\section*{\textbf{CAPITULO I}}
+\end{center}
+\import{introduccion/}{intro_capitulo1}
+
+
+\section{FRAMEWORK}
+\import{introduccion/}{framework}
+
+
+\section{EL FRAMEWORK ELECTRON}
+\import{introduccion/}{el_framewor_electron}
+
+\section{MANEJO DE VERSIONES}
+\import{introduccion/}{gitygithub}
+
+\newpage
+\begin{center}
+\section*{\textbf{DESARROLLO}}
+\section*{INICIACIÓN DEL PROCESO}
+\end{center}
+\import{desarrollo/}{desarrollo}
+
+
+\newpage %nueva pagina
+\begin{center}
+\section*{\textbf{ENLACES WEB}}
+\end{center}
+\import{bibliografiasenlaces/}{enlacesweb}
+
+% pagian de importancia: mirar https://www.um.es/innova/OCW/informatica-para-universitarios/ipu_docs/latex/tema6.html
+%\bibliographystyle{unsrt}
+
+%\bibliography{Bibliografias_web}
+%\printbibliography[title={Referencias Bibliograficas}] %hacemos un %llamado a las bibliografias
+%\printbibliography[type=online,title={Referencias Bibliograficas}]
+%\printbibliography[type=reference,title={Referencia a enlaces}]
+%\printbibliography
+%\printbibliography[keyword={latex},title={Referencias %Bibliografficas}]
+\bibliographystyle{apacite}
+\bibliography{bibliografiasenlaces/bibliografia}
+\end{document}
